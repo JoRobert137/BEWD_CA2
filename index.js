@@ -35,6 +35,10 @@ app.post('/create-user', (req, res) => {
     return res.status(201).send({message:"User created Successfully", userData});
 });
 
+app.get('/', (req, res) => {
+    return res.status({message:"hello"});
+})
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 })
